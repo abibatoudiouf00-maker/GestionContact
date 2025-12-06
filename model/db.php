@@ -13,10 +13,8 @@
 
     
         try {
-           
             $db = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
             return $db;
-
         } catch (PDOException $error) {
             die("La connexion à la BD a échoué: " . $error->getMessage());
         }
